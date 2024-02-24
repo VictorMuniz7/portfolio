@@ -1,0 +1,82 @@
+.container{
+  padding: 1.5em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+
+.title{
+
+  h1{
+    font-family: 'Rubik glitch', sans-serif;
+    font-weight: 400;
+  }
+}
+
+.technologies{
+  display: flex;
+  justify-content: space-around;
+  gap: 3em;
+  flex-wrap: wrap;
+  margin: 2em 0;
+}
+
+.technology{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .8em;
+
+  i{
+    font-size: 3em;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  p{
+    font-size: 1.2em;
+    user-select: none;
+  }
+}
+
+@media screen and (min-width: 57em){
+
+  .title{
+
+    h1{
+      font-size: 2.8em;
+    }
+
+    p{
+      font-size: 1.3em;
+    }
+  }
+
+  .technologies{
+    width: 90%;
+    margin: 3em 0;
+  }
+
+  .technology{
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 71em){
+
+  .technology{
+
+    i{
+      font-size: 5em;
+    }
+
+    p{
+      font-size: 1.5em;
+    }
+  }
+}
